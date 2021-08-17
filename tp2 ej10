@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+#include <cstdlib>
+
+int main()
+{
+
+    int nuno,ndos,ntres,ncuatro,ncinco;
+
+    cout<< "ingresa el primer numero: ";
+    cin>>nuno;
+
+    cout<< "ingresa el segundo numero: ";
+    cin>>ndos;
+
+    cout<< "ingresa el tercer numero: ";
+    cin>>ntres;
+
+    cout<< "ingresa el cuarto numero: ";
+    cin>>ncuatro;
+
+    cout<< "ingresa el quinto numero: ";
+    cin>>ncinco;
+
+    if  ((((nuno>>ndos) && (nuno>>ntres)) && (nuno>>ncuatro)) && (nuno>>ncinco) )
+    {
+        cout<< "el numero mas grande es el numero: "<< nuno;
+    }
+    else
+    {
+        if(((ndos>>ntres) && (ndos>>ncuatro)) && (ndos>>ncinco))
+        {
+            cout<< "el numero mas grande es el numero: "<< ndos;
+        }
+        else
+        {
+            if (ntres>>ncuatro && ntres>>ncinco)
+            {
+                cout<< "el numero mas grande es el numero: "<<ntres;
+            }
+            else
+            {
+                if(ncuatro>>ncinco)
+                {
+                    cout<< "el numero mas grande es el numero: "<< ncuatro;
+                }
+                else
+                {
+                    cout<< "el numero mas grande es el numero: "<<ncinco;
+                }
+            }
+        }
+    }
+    system("pause>nul");
+    return 0;
+}
